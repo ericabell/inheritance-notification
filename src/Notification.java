@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class Notification {
+public abstract class Notification {
     private LocalDateTime createdAt;
     private String subject;
     private String body;
@@ -37,9 +37,7 @@ public class Notification {
         this.body = body;
     }
 
-    public void transport() throws NoTransportException {
-
-    }
+    public abstract void transport() throws NoTransportException;
 
     public void showStatus() {
         System.out.println("status: " + status);

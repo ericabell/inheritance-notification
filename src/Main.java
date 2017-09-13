@@ -19,7 +19,5 @@ public class Main {
         } else {
             System.out.println("Clone is not equal to original");
         }
-
-
     }
 }
